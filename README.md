@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterEveryBy
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Test whether every [iterated][mdn-iterator-protocol] value passes a test implemented by a predicate function.
 
@@ -175,11 +175,11 @@ console.log( bool );
 
 ## See Also
 
--   [`@stdlib/iter/any-by`][@stdlib/iter/any-by]: test whether at least one iterated value passes a test implemented by a predicate function.
--   [`@stdlib/iter/every`][@stdlib/iter/every]: test whether all iterated values are truthy.
--   [`@stdlib/iter/for-each`][@stdlib/iter/for-each]: create an iterator which invokes a function for each iterated value before returning the iterated value.
--   [`@stdlib/iter/none-by`][@stdlib/iter/none-by]: test whether every iterated value fails a test implemented by a predicate function.
--   [`@stdlib/iter/some-by`][@stdlib/iter/some-by]: test whether at least `n` iterated values pass a test implemented by a predicate function.
+-   <span class="package-name">[`@stdlib/iter/any-by`][@stdlib/iter/any-by]</span><span class="delimiter">: </span><span class="description">test whether at least one iterated value passes a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/iter/every`][@stdlib/iter/every]</span><span class="delimiter">: </span><span class="description">test whether all iterated values are truthy.</span>
+-   <span class="package-name">[`@stdlib/iter/for-each`][@stdlib/iter/for-each]</span><span class="delimiter">: </span><span class="description">create an iterator which invokes a function for each iterated value before returning the iterated value.</span>
+-   <span class="package-name">[`@stdlib/iter/none-by`][@stdlib/iter/none-by]</span><span class="delimiter">: </span><span class="description">test whether every iterated value fails a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/iter/some-by`][@stdlib/iter/some-by]</span><span class="delimiter">: </span><span class="description">test whether at least `n` iterated values pass a test implemented by a predicate function.</span>
 
 </section>
 
@@ -230,8 +230,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-every-by/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-every-by?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/iter-every-by.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/iter-every-by/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
