@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.iterEveryBy;
+})();
 })();
 </script>
 ```
@@ -158,6 +160,7 @@ var n = ctx.count;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-every-by@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 function threshold( r ) {
     return ( r < 0.99 );
@@ -175,6 +178,7 @@ var bool = iterEveryBy( riter, threshold );
 
 console.log( bool );
 
+})();
 })();
 </script>
 </body>
@@ -284,15 +288,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/any-by]: https://github.com/stdlib-js/iter-any-by/tree/umd
+[@stdlib/iter/any-by]: https://github.com/stdlib-js/iter-any-by/tree/umd/tree/umd
 
-[@stdlib/iter/every]: https://github.com/stdlib-js/iter-every/tree/umd
+[@stdlib/iter/every]: https://github.com/stdlib-js/iter-every/tree/umd/tree/umd
 
-[@stdlib/iter/for-each]: https://github.com/stdlib-js/iter-for-each/tree/umd
+[@stdlib/iter/for-each]: https://github.com/stdlib-js/iter-for-each/tree/umd/tree/umd
 
-[@stdlib/iter/none-by]: https://github.com/stdlib-js/iter-none-by/tree/umd
+[@stdlib/iter/none-by]: https://github.com/stdlib-js/iter-none-by/tree/umd/tree/umd
 
-[@stdlib/iter/some-by]: https://github.com/stdlib-js/iter-some-by/tree/umd
+[@stdlib/iter/some-by]: https://github.com/stdlib-js/iter-some-by/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
