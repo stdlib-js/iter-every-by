@@ -45,43 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-every-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterEveryBy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-every-by@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-every-by/tags). For example,
-
-```javascript
-iterEveryBy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-every-by@v0.2.1-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterEveryBy = require( 'path/to/vendor/umd/iter-every-by/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-every-by@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterEveryBy;
-})();
-</script>
+var iterEveryBy = require( '@stdlib/iter-every-by' );
 ```
 
 #### iterEveryBy( iterator, predicate\[, thisArg] )
@@ -166,14 +155,9 @@ var n = ctx.count;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-every-by@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-iter-randu' );
+var iterEveryBy = require( '@stdlib/iter-every-by' );
 
 function threshold( r ) {
     return ( r < 0.99 );
@@ -190,11 +174,6 @@ var bool = iterEveryBy( riter, threshold );
 // returns <boolean>
 
 console.log( bool );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -266,8 +245,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-every-by.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-every-by
 
-[test-image]: https://github.com/stdlib-js/iter-every-by/actions/workflows/test.yml/badge.svg?branch=v0.2.1
-[test-url]: https://github.com/stdlib-js/iter-every-by/actions/workflows/test.yml?query=branch:v0.2.1
+[test-image]: https://github.com/stdlib-js/iter-every-by/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/iter-every-by/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-every-by/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-every-by?branch=main
@@ -303,15 +282,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/any-by]: https://github.com/stdlib-js/iter-any-by/tree/umd
+[@stdlib/iter/any-by]: https://github.com/stdlib-js/iter-any-by
 
-[@stdlib/iter/every]: https://github.com/stdlib-js/iter-every/tree/umd
+[@stdlib/iter/every]: https://github.com/stdlib-js/iter-every
 
-[@stdlib/iter/for-each]: https://github.com/stdlib-js/iter-for-each/tree/umd
+[@stdlib/iter/for-each]: https://github.com/stdlib-js/iter-for-each
 
-[@stdlib/iter/none-by]: https://github.com/stdlib-js/iter-none-by/tree/umd
+[@stdlib/iter/none-by]: https://github.com/stdlib-js/iter-none-by
 
-[@stdlib/iter/some-by]: https://github.com/stdlib-js/iter-some-by/tree/umd
+[@stdlib/iter/some-by]: https://github.com/stdlib-js/iter-some-by
 
 <!-- </related-links> -->
 
