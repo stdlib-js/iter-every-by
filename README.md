@@ -105,8 +105,8 @@ var bool = iterEveryBy( array2iterator( [] ), predicate );
 
 A `predicate` function is provided two arguments:
 
--   **value**: iterated value
--   **index**: iteration index (zero-based)
+-   **value**: iterated value.
+-   **index**: iteration index (zero-based).
 
 To set the execution context of the `predicate` function, provide a `thisArg`.
 
@@ -232,7 +232,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
